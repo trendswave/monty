@@ -46,20 +46,23 @@ typedef struct instruction_s
 	stack_t *(*fun)(stack_t **stack, unsigned int l_numb);
 } instruction_t;
 
-	/*List of Prototypes */
-	stack_t *pop(stack_t **stack, unsigned int l_num);
-	stack_t *pall(stack_t **stack, unsigned int l_num);
-	void free_stack(stack_t **stack);
-	stack_t *nop(stack_t **stack, unsigned int l_num);
-	stack_t *(*op_func(char *s, stack_t **stack,
+/*List of Prototypes */
+stack_t *pop(stack_t **stack, unsigned int l_num);
+stack_t *pall(stack_t **stack, unsigned int l_num);
+void free_stack(stack_t **stack);
+stack_t *nop(stack_t **stack, unsigned int l_num);
+stack_t *(*op_func(char *s, stack_t **stack,
 		   unsigned int l_num))(stack_t **stack,
-					      unsigned int l_num);
-	stack_t *pint(stack_t **stack, unsigned int l_num);
-	stack_t *push(stack_t **stack, unsigned int l_num);
-	stack_t *swap(stack_t **stack, unsigned int l_num);
-	stack_t *add(stack_t **stack, unsigned int l_num);
-	stack_t *nop(stack_t **stack, unsigned int l_num);
-	stack_t *div_op(stack_t **stack, unsigned int l_num);
-	stack_t *sub(stack_t **stack, unsigned int l_num);
+					      unsigned int l_num);	stack_t *pint(stack_t **stack, unsigned int l_num);
+stack_t *push(stack_t **stack, unsigned int l_num);
+stack_t *swap(stack_t **stack, unsigned int l_num);
+stack_t *add(stack_t **stack, unsigned int l_num);
+stack_t *nop(stack_t **stack, unsigned int l_num);
+stack_t *div_op(stack_t **stack, unsigned int l_num);
+stack_t *sub(stack_t **stack, unsigned int l_num);
+stack_t *mod(stack_t **stack, unsigned int l_num);
+stack_t *mul_op(stack_t **stack, unsigned int l_num);
+stack_t *pchar(stack_t **stack, unsigned int l_num);
+stack_t *pstr(stack_t **stack, unsigned int l_num);
 
 #endif /* _MONTY_H_ */
