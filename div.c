@@ -29,7 +29,7 @@ stack_t *div_op(stack_t **stack, unsigned int l_num)
 
 	/* stores result in first node */
 	outcome = (head->nxt->n) / (head->n);
-	head->nxt->n = result;
+	head->nxt->n = outcome;
 	pop(stack, 0);
 
 	return (*stack);
