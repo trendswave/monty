@@ -1,4 +1,4 @@
-nclude "monty.h"
+#include "monty.h"
 
 /**
  * pchar - prints the char at the top of the stack
@@ -7,7 +7,7 @@ nclude "monty.h"
  * Return: Returns head of the stack
  */
 
-stack_t *pchar(stack_t **stack, unsigned int l_num)
+stack_t *pchar(stack_t **stack, unsigned int line_number)
 {
 	stack_t *head = *stack;
 

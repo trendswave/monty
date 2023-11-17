@@ -8,7 +8,7 @@
  * Return: Retuns the edited stack
  */
 
-stack_t *sub(stack_t **stack, unsigned int l_num)
+stack_t *sub(stack_t **stack, unsigned int line_number)
 {
 	int diff = 0;
 	stack_t *head = *stack;

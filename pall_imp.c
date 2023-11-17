@@ -7,7 +7,7 @@
  * Return: the address of the first node
  */
 stack_t *pall(stack_t **stack,
-	      unsigned int l_numb __attribute__((unused)))
+	      unsigned int line_number __attribute__((unused)))
 {
 	stack_t *temp;
 	size_t node = 0;

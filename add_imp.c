@@ -8,7 +8,7 @@
  * Return: Returns the added stack
  */
 
-stack_t *add(stack_t **stack, unsigned int l_num)
+stack_t *add(stack_t **stack, unsigned int line_number)
 {
 	int sum = 0;
 	stack_t *head = *stack;

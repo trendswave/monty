@@ -7,7 +7,7 @@
  * Return: The new stack
  */
 
-stack_t *div_op(stack_t **stack, unsigned int l_num)
+stack_t *div_op(stack_t **stack, unsigned int line_number)
 {
 	int outcome = 0;
 	stack_t *head = *stack;

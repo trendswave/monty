@@ -7,7 +7,7 @@
  * Return:Retuns  address of a new node
  */
 stack_t *push(stack_t **stack,
-	      unsigned int l_num __attribute__((unused)))
+	      unsigned int line_number __attribute__((unused)))
 {
 	stack_t *n_node;
 

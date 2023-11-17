@@ -8,7 +8,7 @@
  */
 
 stack_t *rotl(stack_t **stack,
-	      unsigned int l_num __attribute__ ((unused)))
+	      unsigned int line_number __attribute__ ((unused)))
 {
 	stack_t *head = *stack;
 

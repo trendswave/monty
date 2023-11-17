@@ -7,7 +7,7 @@
  * Return: Return Pointer to the stack
  */
 
-stack_t *pop(stack_t **stack, unsigned int l_num __attribute__((unused)))
+stack_t *pop(stack_t **stack, unsigned int line_number __attribute__((unused)))
 {
 	/* pointer to head of stack */
 	stack_t *head = *stack;

@@ -4,11 +4,11 @@
  * pstr - This function prints the string starting at the top of
  * the stack
  * @stack: The pointer to the stack
- * @l_num: The current line number in the file
+ * @line_number: The current line number in the file
  * Return: The pointer to the stack
  */
 stack_t *pstr(stack_t **stack,
-	      unsigned int l_num __attribute__((unused)))
+	      unsigned int line_number __attribute__((unused)))
 {
 	stack_t *head = *stack;
 

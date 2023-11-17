@@ -9,7 +9,7 @@
  * Return: Return corresponding pointer to the operator
  */
 
-stack_t *(*op_func(char *p, stack_t **stack, unsigned int l_num))(stack_t
+stack_t *(*op_func(char *p, stack_t **stack, unsigned int line_number))(stack_t
 **stack, unsigned int l_num)
 {
 	instruction_t ops[] = {

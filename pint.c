@@ -7,7 +7,7 @@
  * Return: Returns Pointer to the stack
  */
 
-stack_t *pint(stack_t **stack, unsigned int l_num)
+stack_t *pint(stack_t **stack, unsigned int line_number)
 {
 	stack_t *head;
 
@@ -15,7 +15,7 @@ stack_t *pint(stack_t **stack, unsigned int l_num)
 
 	if (head == NULL)
 	{
-		fprintf(stderr, "L%d: can't pint, stack empty\n", l_num);
+		fprintf(stderr, "L%d: can't pint, stack empty\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	else

@@ -43,26 +43,27 @@ typedef struct stack_s
 typedef struct instruction_s
 {
 	char *opcode;
-	stack_t *(*fun)(stack_t **stack, unsigned int l_numb);
+	stack_t *(*f)(stack_t **stack, unsigned int l_numb);
 } instruction_t;
 
 /*List of Prototypes */
-stack_t *pop(stack_t **stack, unsigned int l_num);
-stack_t *pall(stack_t **stack, unsigned int l_num);
+stack_t *pop(stack_t **stack, unsigned int line_number);
+stack_t *pall(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t **stack);
-stack_t *nop(stack_t **stack, unsigned int l_num);
+stack_t *nop(stack_t **stack, unsigned int line_number);
 stack_t *(*op_func(char *s, stack_t **stack,
 		   unsigned int l_num))(stack_t **stack,
-					      unsigned int l_num);	stack_t *pint(stack_t **stack, unsigned int l_num);
-stack_t *push(stack_t **stack, unsigned int l_num);
-stack_t *swap(stack_t **stack, unsigned int l_num);
-stack_t *add(stack_t **stack, unsigned int l_num);
-stack_t *nop(stack_t **stack, unsigned int l_num);
-stack_t *div_op(stack_t **stack, unsigned int l_num);
-stack_t *sub(stack_t **stack, unsigned int l_num);
-stack_t *mod(stack_t **stack, unsigned int l_num);
-stack_t *mul_op(stack_t **stack, unsigned int l_num);
-stack_t *pchar(stack_t **stack, unsigned int l_num);
-stack_t *pstr(stack_t **stack, unsigned int l_num);
+					      unsigned int line_number);	stack_t *pint(stack_t **stack, unsigned int l_num);
+stack_t *push(stack_t **stack, unsigned int line_number);
+stack_t *swap(stack_t **stack, unsigned int line_number);
+stack_t *add(stack_t **stack, unsigned int line_number);
+stack_t *nop(stack_t **stack, unsigned int line_number);
+stack_t *rotl(stack_t **stack, unsigned int line_number);
+stack_t *div_op(stack_t **stack, unsigned int line_number);
+stack_t *sub(stack_t **stack, unsigned int line_number);
+stack_t *mod(stack_t **stack, unsigned int line_number);
+stack_t *mul_op(stack_t **stack, unsigned int line_number);
+stack_t *pchar(stack_t **stack, unsigned int line_number;
+stack_t *pstr(stack_t **stack, unsigned int line_number);
 
 #endif /* _MONTY_H_ */

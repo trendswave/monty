@@ -8,7 +8,7 @@
  */
 
 stack_t *nop(stack_t **stack __attribute__ ((unused)),
-	  unsigned int l_num __attribute__((unused)))
+	  unsigned int line_number __attribute__((unused)))
 {
 	return (0);
 }

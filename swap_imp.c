@@ -7,7 +7,7 @@
  * Return: Returns address of the first node
  */
 stack_t *swap(stack_t **stack,
-	      unsigned int l_num __attribute__((unused)))
+	      unsigned int line_number __attribute__((unused)))
 {
 	stack_t *head;
 	int temp;
@@ -23,7 +23,7 @@ stack_t *swap(stack_t **stack,
 	else
 	{
 		fprintf(stderr, "L%d: can't swap, stack too short\n",
-			l_num);
+			line_number);
 		free_stack(stack);
 		exit(EXIT_FAILURE);
 	}
