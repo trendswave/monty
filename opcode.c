@@ -5,12 +5,12 @@
  * perform the operation
  * @p: The operator passed as argument to program
  * @stack: The pointer to the stack
- * @l_num: The line number in the file
+ * @line_number: The line number in the file
  * Return: Return corresponding pointer to the operator
  */
 
 stack_t *(*op_func(char *p, stack_t **stack, unsigned int line_number))(stack_t
-**stack, unsigned int l_num)
+**stack, unsigned int line_number)
 {
 	instruction_t ops[] = {
 		{"push", push},
@@ -44,7 +44,7 @@ stack_t *(*op_func(char *p, stack_t **stack, unsigned int line_number))(stack_t
 		i++;
 	}
 
-	fprintf(stderr, "L%d: unknown instruction %s\n", l_num, p);
+	fprintf(stderr, "L%d: unknown instruction %s\n", line_number, p);
 	free_stack(stack);
 	exit(EXIT_FAILURE);
 

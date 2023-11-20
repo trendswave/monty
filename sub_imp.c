@@ -4,7 +4,7 @@
  * sub - This function subtracts the top two nodes of the stack, stores it in
  * the second node, and pops off the top node
  * @stack: The stack list
- * @l_num: The line number of the file
+ * @line_number: The line number of the file
  * Return: Retuns the edited stack
  */
 
@@ -18,7 +18,7 @@ stack_t *sub(stack_t **stack, unsigned int line_number)
 	{
 		/* Print error, free, and exit */
 		fprintf(stderr, "L%d: can't sub, stack too short\n",
-l_num);
+line_number);
 		free_stack(stack);
 		exit(EXIT_FAILURE);
 	}

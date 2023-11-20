@@ -4,7 +4,7 @@
  * mod - This function computes the rest of the division of the
  * second top element of the stack by the top element of the stack
  * @stack: The pointer to the stack
- * @l_num: The current line number in the file
+ * @line_number: The current line number in the file
  * Return: The pointer to the stack
  */
 stack_t *mod(stack_t **stack, unsigned int line_number)
@@ -15,13 +15,13 @@ stack_t *mod(stack_t **stack, unsigned int line_number)
 	if (!head || !(head->nxt))
 	{
 		fprintf(stderr, "L%d: can't mod, stack too short\n",
-l_num);
+line_number);
 		free_stack(stack);
 		exit(EXIT_FAILURE);
 	}
 	if (head->n == 0)
 	{
-		fprintf(stderr, "L%d: division by zero\n", l_num);
+		fprintf(stderr, "L%d: division by zero\n", line_number);
 		free_stack(stack);
 		exit(EXIT_FAILURE);
 	}

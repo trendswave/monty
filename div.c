@@ -3,7 +3,7 @@
 /**
  * div_op - This function divides the second top nodes of the stack by the top
  * @stack: The stack list
- * @l_num: The line number of the file
+ * @line_number: The line number of the file
  * Return: The new stack
  */
 
@@ -16,14 +16,14 @@ stack_t *div_op(stack_t **stack, unsigned int line_number)
 	if (!head || !head->nxt)
 	{
 		/* Print error, free, and exit */
-		fprintf(stderr, "L%d: can't div, stack too short\n", l_num);
+		fprintf(stderr, "L%d: can't div, stack too short\n", line_number);
 		free_stack(stack);
 		exit(EXIT_FAILURE);
 	}
 
 	if (head->n == 0)
 	{
-		fprintf(stderr, "L%d: division by zero\n", l_num);
+		fprintf(stderr, "L%d: division by zero\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 
